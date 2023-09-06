@@ -1,0 +1,127 @@
+
+.header{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  border-bottom-width:2px;
+  border-bottom-color:  rgb(225
+  , 224, 224) ;
+  border-bottom-style:solid ;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: white;
+}
+.left{
+  flex: 1;
+  display: flex;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.profile-picture{
+  height: 35px;
+  margin-left: 50px;
+  border-radius: 17px;
+}
+.user-name{
+  margin-top: 7px;
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.right{
+  width: 200px;
+}
+.add-btn{
+  height: 28px;
+  color: white;
+  background-color: rgb(71, 
+  93, 241);
+  border: none;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+.message-btn{
+  height: 28px;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  font-weight:bold ;
+  background-color: rgb(225, 224, 224);
+}
+.main{
+display: flex;
+flex-direction: row;
+}
+.left-main{
+ background-color: rgb(56, 55, 55);
+ margin-left: 37px;
+ display: flex;
+ flex-direction: column;
+ width: 60px;
+ align-items: center;
+
+}
+.middle-main{
+  background-color: rgb(72, 71, 71);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+
+}
+.right-main{
+  flex: 2;
+  background-color: lightblue;
+  margin-right: 50px;
+}
+.main-image{
+  height: 35px;
+  width: 35px;
+  border-radius: 17px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.info-main1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-p{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+.main-add{
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+  color: rgb(166, 164, 164);
+  
+}
+.info-main2{
+  margin-left: 20px;
+  
+  color: rgb(166, 164, 164) ;
+}
+.info-main3{
+  margin-left: 20px;
+  color: rgb(166, 164, 164) ;
+}
+.info-main4{
+  margin-left: 20px;
+  color: rgb(166, 164, 164) ;
+}
+.right-main{
+  background-color:rgb(166, 164, 164) ;
+}
