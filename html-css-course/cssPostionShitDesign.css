@@ -1,0 +1,35 @@
+.shirt{
+  position: relative;
+  display : inline-block;
+  border-style: solid;
+  border-color:  rgba(187, 181, 181, 0.826) ;
+  
+}
+.discount-tag{
+ position: absolute; 
+ top: 10px;
+ right: -1px;
+ background-color: black;
+ color: white;
+ padding: 4px;
+ border-radius: 2px;
+}
+.upper{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(187, 181, 181, 0.826);
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+.add-btn{
+  padding: 7px 9px 7px 9px;
+  font-weight: bold;
+  font-size: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  background-color:  rgba(228, 227, 227, 0.826);
+}
