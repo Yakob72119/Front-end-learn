@@ -7,7 +7,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 }
 
 .video-info-grid{
@@ -15,11 +15,11 @@ display: grid;
 grid-template-columns: 50px 1fr;
 }
 .profile-picture{
-width: 40px; /*   width=100% it will take the space of its container whe we use %*/
+width: 36px; /*   width=100% it will take the space of its container whe we use %*/
 border-radius: 25px;
 }
 .thumbnail-row{
-margin-bottom: 12px;
+margin-bottom: 8px;
 position: relative;
 }
 .video-author,
