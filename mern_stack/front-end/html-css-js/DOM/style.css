@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(44, 46, 48);
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+h1{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 70px;
+  font-weight: bold;
+  color: aqua;
+
+}
+.game{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.game h2{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: aqua;
+  text-align: center;
+}
+.dicee{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: rgb(94, 7, 7);
+}
+input{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+footer h3{
+  text-align: center;
+   
+   
+}
