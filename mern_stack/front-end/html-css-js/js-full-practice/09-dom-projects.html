@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Projects</title>
+</head>
+<body>
+<p>YouTube Subscribe Button</p>
+<button onclick="
+sub();
+ ">Subscribe</button>
+ <p>Rock paper Scissor</p>
+ <a href="./09-dom-rockPaper.html">Click Me</a>
+  <script>
+function sub(){
+  let status = document.querySelector('button').innerHTML;
+  status === 'Subscribe' ? document.querySelector('button').innerHTML = 'Subscribed': document.querySelector('button').innerHTML='Subscribe';
+}
+</script>
+</body>
+</html>

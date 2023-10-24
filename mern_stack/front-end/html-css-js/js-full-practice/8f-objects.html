@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>challenge on objects</title>
+</head>
+<body>
+  <script>
+    let product1={
+      name :'basketball',
+      price: 350
+    };
+    let product2={
+      name :'basketball',
+      price: 350
+    };
+
+    function isSameProduct(obj1,obj2){
+    let check;
+     if(obj1.name === obj2.name && obj1.price === obj2.price ){
+      check= true;
+     }else{ 
+      check= false;
+    };
+     return check
+    };
+
+  console.log( isSameProduct(product1, product2));
+
+  let name='YAKOB BESHAHWERED';
+  console.log(name.toLowerCase());
+  </script>
+</body>
+</html>
