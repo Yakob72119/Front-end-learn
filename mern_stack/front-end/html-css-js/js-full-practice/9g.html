@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Project handling float</title>
+</head>
+<body>
+   <p>Youtube subscribe button</p>
+   <button class="js-subscribe-button" onclick="
+   subscribe();
+   ">Subscribed</button> 
+
+   <p>Rock Paper Scissors</p>
+   <a href="./09-rock-paper-scissors.html">Click Here</a>
+
+   <p>Amazon shipping calculator</p>
+   <p>Order under $40 = +10 shipping</p>
+   <p>Order over 50$ = FREE shipping</p>
+   <input  placeholder="Cost of order" class="js-cost-input" 
+   onkeydown="
+   handleCostKeyDowm(event);
+   ">
+   <button onclick="
+   calculateTotal();
+   ">Calculate</button>
+   <p class="js-totalCost"></p>
+   
+   
+
+   <script>
+
+    
+    function handleCostKeyDowm(event){
+    if(event.key === 'Enter'){
+    calculateTotal();
+   }
+    }
+    function calculateTotal(){
+    const inputElement=document.querySelector('.js-cost-input');
+    let cost=Number(inputElement.value);
+    
+    if(cost<40){
+        
+        cost=cost.toFixed(2) + 10;   
+    }
+    document.querySelector('.js-totalCost').innerHTML=`$${cost}`;
+}
+     function subscribe(){
+    const buttonElement = document.querySelector('.js-subscribe-button');
+    if(buttonElement.innerText === 'Subscribe') {
+            buttonElement.innerText='Subscribed';
+        }else{
+            buttonElement.innerText='Subscribe';
+        }
+     }
+
+   </script>
+</body>
+</html>

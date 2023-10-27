@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom challange exercises</title>
+</head>
+<body>
+<button onclick="
+var ch='heads';
+ choose(ch);
+  ">head</button>
+<button onclick="
+var ch='tails';
+choose(ch);
+">Tail</button>
+<p class="js-paragraph"></p>
+
+<input class="js-input" type="text" onkeydown="
+if(event.key === 'Enter'){
+  nameViewer();
+}
+" >
+<button onclick="
+nameViewer();
+">Submit</button>
+<p class="js-para"></p>
+
+<script>
+  /* 9a-exercise
+  console.log(document.querySelector('button'));
+  document.querySelector('.js-button').innerHTML='9b'*/
+  function choose(ch){
+    document.querySelector('.js-paragraph').innerHTML=`Your chose : ${ch}`
+  }
+  function nameViewer(){
+    const name=String(document.querySelector('.js-input').value);
+    document.querySelector('.js-para').innerHTML=`your name is: ${name}`;
+  }
+</script>
+</body>
+</html>
