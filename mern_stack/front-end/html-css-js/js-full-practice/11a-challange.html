@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and loop  challange</title>
+</head>
+<body>
+    <script>
+        for(let i =0;i<=10;i++){
+            if(i%2==0){
+                console.log(i);
+            }
+        }
+        for(let i=5;i>=0;i--){
+            console.log(i);
+        }
+        const num=[1,2,3];
+        const nums=[];
+        for (let i =0;i<num.length;i++){
+            const value= num[i];
+            nums.push(value + 1);
+        }
+        console.log(nums);
+
+        function addOne(array){
+            const nums=[];
+            for (let i =0;i<array.length;i++){
+            const value= array[i];
+            nums.push(value + 1);
+        } 
+        return nums
+        }
+        const value=addOne([-2,-1,0,99]);
+        console.log(value);
+        
+        function addNum(array,num){
+            const nums=[];
+            for(let i=0;i<array.length;i++){
+                let value = array[i];
+                nums.push(value + num);
+            }
+            return nums
+        }
+           let value= addNum([1,2,3],2);
+           let value1= addNum([1,2,3],3);
+           let value2=addNum([-2,-1,0,99],2);
+           console.log(value,value1,value2);
+
+        function minMax(nums){
+            let min;
+            let max;
+            let minmax ={
+                min : 0,
+                max : 0
+            }
+           for (let j=0;j<num<length;j++){
+            for(let i =0;i<num.length;i++){
+                let value= num[i];
+            }
+        }
+        }
+    </script>
+</body>
+</html>
