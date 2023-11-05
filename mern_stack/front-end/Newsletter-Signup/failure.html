@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Failure Page</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4; /* Light Grey Background */
+  }
+  .jumbotron {
+    background: linear-gradient(135deg, #e2c3c3, #e2c3c3); /* Elegant Linear Gradient */
+    color: #333; /* Dark Grey Text */
+    padding: 100px 25px;
+    text-align: center;
+    border-radius: 8px; /* Rounded Corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle Box-Shadow */
+    margin: 50px auto; /* Centering Jumbotron */
+    max-width: 600px; /* Max Width */
+  }
+  .jumbotron h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #a94442; /* Dark Red for Error */
+  }
+  .jumbotron p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .retry-btn {
+    background-color: #c9302c; /* Red Button */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  .retry-btn:hover {
+    background-color: #ac2925; /* Darker Red */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Hover Effect */
+  }
+</style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <h1>Oops!</h1> 
+  <p>Something went wrong and your operation didn't complete successfully.</p> 
+  <form action="/failure" method="post">
+    <button type="submit" class="retry-btn" id="retry">Try Again</button>
+  </form>
+</div>
+
+<!-- <script>
+  document.getElementById("retry").onclick = function() {
+    window.history.back();
+  };
+</script> -->
+
+</body>
+</html>
